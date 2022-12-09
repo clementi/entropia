@@ -12,7 +12,7 @@ fn main() -> io::Result<()> {
 }
 
 fn entropy(buffer: &Vec<u8>) -> f64 {
-    let pools = vec![
+    let pools = [
         "abcdefghijklmnopqrstuvwxyz",
         "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
         "0123456789",
