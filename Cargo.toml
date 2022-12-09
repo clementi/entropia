@@ -1,8 +1,18 @@
 [package]
 name = "entropia"
 version = "0.1.0"
+description = "Measure the information entropy of some text."
 edition = "2021"
+rust-version = "1.65"
+homepage = "https://github.com/clementi/entropia"
+repository = "https://github.com/clementi/entropia"
+license = "MIT"
+readme = "README.md"
+keywords = ["command-line", "entropy"]
+categories = ["command-line-utilities"]
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[[bin]]
+name = "entropy"
+path = "src/main.rs"
 
 [dependencies]
