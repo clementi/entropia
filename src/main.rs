@@ -52,6 +52,8 @@ mod tests {
             ("12-", 3.0 * 42.0_f64.log2()),
             ("ab@", 3.0 * 58.0_f64.log2()),
             ("AB@", 3.0 * 58.0_f64.log2()),
+            ("\t\n\t", 3.0 * 4.0_f64.log2()),
+            ("AB\r", 3.0 * 30.0_f64.log2()),
         ];
 
         for (input, expected) in cases {
