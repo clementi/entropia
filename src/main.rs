@@ -1,7 +1,5 @@
 use std::io::{self, Read};
 
-mod entropy;
-
 fn main() -> io::Result<()> {
     let mut buffer = vec![];
     io::stdin().read_to_end(&mut buffer)?;
